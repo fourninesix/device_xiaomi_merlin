@@ -31,6 +31,10 @@ $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
+# CameraGo
+PRODUCT_PACKAGES += \
+    CameraGo
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
@@ -96,4 +100,4 @@ PRODUCT_COPY_FILES += \
 # [DNM] Temp permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
-    $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml \
+    $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml
