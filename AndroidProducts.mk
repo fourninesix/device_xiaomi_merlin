@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_merlin.mk
+   $(LOCAL_DIR)/nad_merlin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_merlin-user \
-    lineage_merlin-userdebug \
-    lineage_merlin-eng
+    nad_merlin-user \
+    nad_merlin-userdebug \
+    nad_merlin-eng
