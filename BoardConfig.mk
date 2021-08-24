@@ -43,6 +43,9 @@ TARGET_USES_UEFI := true
 # DPI
 TARGET_SCREEN_DENSITY := 440
 
+# Broken rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
