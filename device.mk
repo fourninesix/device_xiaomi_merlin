@@ -31,6 +31,10 @@ $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
+# Apn
+PRODUCT_COPY_FILES += \
+   $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
 # CameraGo
 PRODUCT_PACKAGES += \
     CameraGo
